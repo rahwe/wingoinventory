@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wingo Inventory</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/top-logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <!--font awesome-->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <!-- Latest compiled and minified CSS for option search -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+  <!--Data table-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="scan.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <img src="assets/img/backward.png" alt="back">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <a href="index.html" class="logout-btn"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="head-section" class="head-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Agent ID</h5>
+                <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <select class="selectpicker form-control" data-live-search="true" disabled>
+                          <option>50201</option>
+                          <option>50202</option>
+                          <option>50203</option>
+                          <option>50204</option>
+                          <option>50205</option>
+                          <option>50206</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= Featured Services Section ======= -->
+    <section id="content-section" class="content-section">
+      <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+
+                <h5 class="card-title text-left">Totals</h5>
+                <div class="footer-inner">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="code-number">G006-21018</div>
+                      <div class="quantity">11 Books</div>
+                      <div class="quantity" style="color: #ff0000;">1 Books</div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div class="code-number">G006-21020</div>
+                      <div class="quantity">3 Books</div>
+                      <div class="quantity">0 Books</div>
+                    </li>
+                  </ul>
+                </div>
+
+
+                  <h5 class="card-title">Inventory on hand</h5>
+               
+                    
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th>Code Number</th>
+                              <th>Status</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                              
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                              
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                             
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                              
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="fall">X</div></i></td>
+                              
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                              
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                             
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                             
+                          </tr>
+                          <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                              <td><div class="pass">OK</div></td>
+                             
+                          </tr>
+                          <tr>
+                            <td>G006-xxx-xxx1-xxx</td>
+                            <td><div class="pass">OK</div></td>
+                           
+                        </tr>
+                        <tr>
+                          <td>G006-xxx-xxx1-xxx</td>
+                            <td><div class="pass">OK</div></td>
+                          
+                        </tr>
+                        <tr>
+                          <td>G006-xxx-xxx1-xxx</td>
+                          <td><div class="pass">OK</div></td>
+                       
+                          </tr>
+                            <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                  <td><div class="pass">OK</div></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>G006-xxx-xxx1-xxx</td>
+                                <td><div class="pass">OK</div></td>
+                              
+                            </tr>
+                      
+                                
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Code Number</th>
+                                    <th>Status</th>
+                                  
+                                </tr>
+                            </tfoot>
+                  </table>
+                 
+                 
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End section  -->
+
+  </main><!-- End #main -->
+
+
+
+  
+  <!-- Template Main JS File -->
+  <script src="assets/vendor/jquery.slim.min.js"></script>
+  <script src="assets/vendor/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="assets/vendor/bootstrap-select.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+  <!--Data tabel csv-->
+  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+
+
+
+
+</body>
+
+</html>

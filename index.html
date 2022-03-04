@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wingo Inventory</title>
+  <meta content="wingo inventory" name="description">
+  <meta content="wingo lottery lotto" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/top-logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap-select.min.css">
+ 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <!--Data table-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+  
+
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <img src="assets/img/top-logo-small.png" alt="" width="50px">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <a href="login.html" class="logout-btn">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+        </a>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    <section id="head-section" class="head-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Select Agent ID</h5>
+                  <div class="form-group">
+                    <select class="selectpicker form-control" data-live-search="true" id="agentID">
+                      <option value="selectID">Select agentID</option>
+                      <option value="agentone">50201</option>
+                      <option value="agenttwo">50202</option>
+                      <option value="agentthree">50203</option>
+                      <option value="agentfour">50204</option>
+                      <option value="agentfive">50205</option>
+                      <option value="agentsix">50206</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+
+        <!-- ======= Featured Services Section ======= -->
+        <section id="content-section" class="content-section">
+          <div class="container mb-5">
+            <div class="row">
+                <div class="col-12">
+                  <div id="selectID" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number"></div>
+                            <div class="quantity"></div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number"></div>
+                            <div class="quantity"></div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventoryNone" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                  <td></td>
+
+                              </tr>
+                              <tr>
+                                  <td></td>
+
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                
+                              </tr>
+                              <tr>
+                                  <td></td>
+                                
+                              </tr>
+                              <tr>
+                                <td></td>
+                               
+                            </tr>
+                            <tr>
+                              <td></td>
+                               
+                            </tr>
+                            <tr>
+                              <td></td>
+                             
+                              </tr>
+                                <tr>
+                                      <td></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+                    </div>
+                    
+                  </div>
+                  <div id="agentone" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">12 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">3 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventoryOne" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx1-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx1-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx1-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx1-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx1-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                    
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  <div id="agenttwo" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">29 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">6 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                        <table id="inventoryTwo" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx2-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx2-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx2-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx2-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx2-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx2-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  <div id="agentthree" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">30 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">9 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventoryThree" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx3-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx3-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx3-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx3-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx3-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx3-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                    
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  <div id="agentfour" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">40 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">7 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventoryFour" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx4-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx4-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx4-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx4-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx4-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx4-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                    
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  <div id="agentfive" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">70 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">13 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventoryFive" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx5-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx5-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx5-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx5-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx5-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx5-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  <div id="agentsix" class="data card">
+                    <div class="card-body">
+
+                      <h5 class="card-title">Totals</h5>
+                      <div class="footer-inner">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21018</div>
+                            <div class="quantity">25 Books</div>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <div class="code-number">G006-21020</div>
+                            <div class="quantity">5 Books</div>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <h5 class="card-title">Inventory on hand</h5>
+                      
+                        <table id="inventorySix" class="table table-striped table-bordered" style="width:100%">
+                          <thead>
+                              <tr>
+                                  <th>Code Number</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                  <td>G006-xxx-xxx6-xxx</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>G006-xxx-xxx6-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx6-xxx</td>
+                               
+                            </tr>
+                            <tr>
+                              <td>G006-xxx-xxx6-xxx</td>
+                             
+                              </tr>
+                                <tr>
+                                      <td>G006-xxx-xxx6-xxx</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>G006-xxx-xxx6-xxx</td>
+                                 
+                                </tr>
+                          
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Code Number</th>
+                                    </tr>
+                                </tfoot>
+                        </table>
+
+                        <a href="scan.html" class="btn btn-info d-flex justify-content-center mt-3">Check Stock</a>
+                     
+                     
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+            </div>
+
+          </div>
+        </section><!-- End section  -->
+
+  </main><!-- End #main -->
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/vendor/jquery.slim.min.js"></script> -->
+  <script src="assets/vendor/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="assets/vendor/bootstrap-select.min.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+
+
+    <!--Data tabel csv-->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+
+
+ 
+ 
+  
+  
+</body>
+
+</html>

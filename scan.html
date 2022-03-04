@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wingo Inventory</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="assets/vendor/bootstrap-select.min.css">
+
+ 
+ <!-- Template Main CSS File -->
+ <link href="assets/css/main.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header-scan" class="header-scan fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logout-btn">
+          <img src="assets/img/white-backward.png" alt="backward">
+      </a>
+    <nav id="navbar" class="navbar">
+      <div class="img-item" id="inputCode" data-toggle="modal" data-target="#staticBackdrop"><img src="assets/img/keypad.png" alt="keypad"></div>
+      <div class="img-item" id="openSun"><img src="assets/img/sun.png" alt="sun"></div>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+<main id="main-scan">
+  <!-- ======= Scan code Section ======= -->
+  <section id="scandCodeSection" class="content-section-scan">
+    <div class="container pt-5">
+      <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body text-center">
+                <div id="qr-reader"></div>
+                <div class="show-scan" id="qr-reader-results"></div>
+                <a href="end_report.html" type="button" class="btn btn-info my-5 btn-block" id="checkCode">End Report</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section><!-- End section  -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-body text-center">
+            <form>
+              <div class="form-group text-center">
+                <label for="forInputCode">Please input ticket serial number</label>
+                <input type="text" class="form-control text-center" id="forInputCode" placeholder="A0001-19001-0000001-001">
+              </div>
+            </form>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-info">Check</button>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+</main><!-- End #main -->
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/vendor/jquery.slim.min.js"></script>
+  <script src="assets/vendor/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="assets/vendor/bootstrap-select.min.js"></script>
+
+  <script src="assets/js/html5-qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+
+
+  <script src="assets/js/main.js"></script>
+
+
+
+   <!--Data tabel csv-->
+   <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+ 
+
+   <script>
+     
+          var resultContainer = document.getElementById('qr-reader-results');
+          var lastResult, countResults = 0;
+
+   
+
+          function onScanSuccess(decodedText, decodedResult) {
+              if (decodedText !== lastResult) {
+                  ++countResults;
+                  lastResult = decodedText;
+
+                  resultContainer.innerHTML= decodedText
+              }
+          }
+
+          var html5QrcodeScanner = new Html5QrcodeScanner(
+            "qr-reader", { fps: 100, qrbox: 250 }
+            );
+            
+
+        
+          html5QrcodeScanner.render(onScanSuccess);
+
+
+   </script>
+
+
+</body>
+
+</html>
